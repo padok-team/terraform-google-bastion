@@ -4,6 +4,8 @@ Terraform module that creates a bastion VM you can connect to through IAP using 
 
 This module uses the OSLogin feature of GCP, this makes the legacy SSH Metadata setup stop working on the bastion VM.
 
+> :information the OSLogin 2FA option to connect to bastion instance is enabled by default. Set variable `two_factor` to `false` if not needed.
+
 > :warning: For users external to your organization you will need to give them at org-level this role `roles/compute.osLoginExternalUser`
 
 > :information_source: You can also use shuttle by piping the command like that `sshuttle -e 'gcloud compute ssh --tunnel-through-iap --project <GCP-PROJECT> --zone europe-west1-b' -r bastion 10.0.0.0/16`
