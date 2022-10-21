@@ -49,3 +49,7 @@ No modules.
 |------|-------------|
 | <a name="output_command_to_connect"></a> [command\_to\_connect](#output\_command\_to\_connect) | Command to connect to the bastion instance |
 <!-- END_TF_DOCS -->
+
+## License
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
