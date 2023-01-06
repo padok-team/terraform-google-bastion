@@ -1,7 +1,6 @@
 locals {
   gcp_iap_source_ranges = ["35.235.240.0/20"]
   zone                  = random_shuffle.zone.result[0]
-  network               = data.google_compute_subnetwork.this.network
 }
 
 # Select a zone randomly
@@ -19,7 +18,7 @@ resource "google_compute_firewall" "iap_access_firewall" {
   project = var.project_id
 
   name    = substr("${var.name}-${var.project_id}-iap-${random_id.this.hex}", 0, 63)
-  network = local.network
+  network = var.network_self_link
 
   allow {
     protocol = "tcp"
