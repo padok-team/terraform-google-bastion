@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/padok-team/terraform-google-bastion/compare/v0.1.1...v0.1.2) (2023-02-03)
+
+
+### Bug Fixes
+
+* **data:** remove subnet data ([7988dd6](https://github.com/padok-team/terraform-google-bastion/commit/7988dd609c639a74d1c47b4be72b6b8834126b3a))
+
 ## [0.1.1](https://github.com/padok-team/terraform-google-bastion/compare/v0.1.0...v0.1.1) (2023-01-06)
 
 
