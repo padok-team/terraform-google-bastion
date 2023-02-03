@@ -35,13 +35,15 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | Name to give the bastion VM | `string` | n/a | yes |
-| <a name="input_project_id"></a> [project\_id](#input\_project\_id) | ID of the project in which the bastion VM will be deployed | `string` | n/a | yes |
-| <a name="input_subnet_self_link"></a> [subnet\_self\_link](#input\_subnet\_self\_link) | Subnet self\_link in which the bastion VM will be deploy | `string` | n/a | yes |
-| <a name="input_labels"></a> [labels](#input\_labels) | Labels to add to the bastion VM | `map(string)` | `{}` | no |
-| <a name="input_members"></a> [members](#input\_members) | List of members inside the organization that can connect to the bastion VM through IAP | `list(string)` | `[]` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | Network tags to add to the bastion VM | `list(string)` | `[]` | no |
-| <a name="input_two_factor"></a> [two\_factor](#input\_two\_factor) | Enable the 2FA option to connect to bastion instance | `bool` | `true` | no |
+| <a name="input_name"></a> [name](#input\_name) | Name to give the bastion VM. | `string` | n/a | yes |
+| <a name="input_network_self_link"></a> [network\_self\_link](#input\_network\_self\_link) | Network self\_link used for firewall configuration. | `string` | n/a | yes |
+| <a name="input_project_id"></a> [project\_id](#input\_project\_id) | ID of the project in which the bastion VM will be deployed. | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | Region to deploy the bastion in. | `string` | n/a | yes |
+| <a name="input_subnet_self_link"></a> [subnet\_self\_link](#input\_subnet\_self\_link) | Subnet self\_link in which the bastion VM will be deployed. | `string` | n/a | yes |
+| <a name="input_labels"></a> [labels](#input\_labels) | Labels to add to the bastion VM. | `map(string)` | `{}` | no |
+| <a name="input_members"></a> [members](#input\_members) | List of members inside the organization that can connect to the bastion VM through IAP. | `list(string)` | `[]` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Network tags to add to the bastion VM. | `list(string)` | `[]` | no |
+| <a name="input_two_factor"></a> [two\_factor](#input\_two\_factor) | Enable the 2FA option to connect to bastion instance. | `bool` | `true` | no |
 
 ## Outputs
 
