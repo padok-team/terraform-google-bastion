@@ -20,6 +20,13 @@ variable "labels" {
   default     = {}
 }
 
+# Machine-related variables
+variable "machine_type" {
+  type        = string
+  description = "The machine type for bastion instance."
+  default     = "f1-micro"
+}
+
 # Network-related variables
 variable "network_self_link" {
   type        = string

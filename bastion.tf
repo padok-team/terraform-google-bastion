@@ -34,7 +34,7 @@ resource "google_compute_instance" "bastion" {
 
   # General information
   name         = var.name
-  machine_type = "f1-micro"
+  machine_type = var.machine_type
   zone         = local.zone
 
   tags = var.tags
