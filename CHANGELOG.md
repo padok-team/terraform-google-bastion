@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/padok-team/terraform-google-bastion/compare/v0.1.2...v0.2.0) (2023-04-11)
+
+
+### Features
+
+* **variables:** add machine_type as variable ([fc9c9ea](https://github.com/padok-team/terraform-google-bastion/commit/fc9c9ea3816c61caf675c55cd57f32ebed7bcf5c))
+
 ## [0.1.2](https://github.com/padok-team/terraform-google-bastion/compare/v0.1.1...v0.1.2) (2023-02-03)
 
 
