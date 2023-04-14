@@ -57,3 +57,17 @@ variable "two_factor" {
   description = "Enable the 2FA option to connect to bastion instance."
   default     = true
 }
+
+# Service Account email
+variable "service_account_email" {
+  type        = string
+  description = "Email address associated with the bastion service account"
+  default     = null
+}
+
+# Service Account scopes
+variable "service_account_scopes" {
+  type        = list(string)
+  description = "List of service scopes allowed for the bastion instance"
+  default     = ["cloud-platform"]
+}

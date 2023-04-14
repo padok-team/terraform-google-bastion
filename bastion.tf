@@ -39,7 +39,14 @@ resource "google_compute_instance" "bastion" {
 
   tags = var.tags
 
+  # Service account used by bastion
+  service_account {
+    email  = var.service_account_email
+    scopes = var.service_account_scopes
+  }
+
   # Disk image
+  #checkov:skip=CKV_GCP_38:No sensitive data in a bastion
   boot_disk {
     initialize_params {
       image = data.google_compute_image.my_image.self_link
@@ -51,10 +58,12 @@ resource "google_compute_instance" "bastion" {
   }
 
   metadata = var.two_factor ? {
-    enable-oslogin     = "true"
-    enable-oslogin-2fa = "true"
+    enable-oslogin         = "true"
+    enable-oslogin-2fa     = "true"
+    block-project-ssh-keys = true
     } : {
-    enable-oslogin = "true"
+    enable-oslogin         = "true"
+    block-project-ssh-keys = true
   }
 
   shielded_instance_config {
