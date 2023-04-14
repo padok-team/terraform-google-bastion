@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/padok-team/terraform-google-bastion/compare/v0.2.0...v0.3.0) (2023-04-14)
+
+
+### Features
+
+* **sa:** add bastion explicit sa ([4c6dc63](https://github.com/padok-team/terraform-google-bastion/commit/4c6dc63af7a0896973ad88334f523de459ac12b8))
+
 ## [0.2.0](https://github.com/padok-team/terraform-google-bastion/compare/v0.1.2...v0.2.0) (2023-04-11)
 
 
