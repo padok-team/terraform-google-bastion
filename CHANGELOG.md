@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/padok-team/terraform-google-bastion/compare/v0.3.0...v0.4.0) (2024-05-31)
+
+
+### Features
+
+* updated bastion image to debian 12 ([56de08b](https://github.com/padok-team/terraform-google-bastion/commit/56de08bbd852e59769afaf0b231b4abdf8f67fe7))
+
 ## [0.3.0](https://github.com/padok-team/terraform-google-bastion/compare/v0.2.0...v0.3.0) (2023-04-14)
 
 
