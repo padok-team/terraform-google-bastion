@@ -1,5 +1,5 @@
 locals {
-  project_id = "padok-cloud-factory"
+  project_id = "library-344516"
   region     = "europe-west-3"
 }
 
