@@ -6,10 +6,10 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
 
-func TestTerraformDefaultExample(t *testing.T) {
+func TestTerraformBastionBasic(t *testing.T) {
 	// retryable errors in terraform testing.
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
-		TerraformDir: "../examples/default",
+		TerraformDir: "../examples/basic",
 	})
 
 	defer terraform.Destroy(t, terraformOptions)
