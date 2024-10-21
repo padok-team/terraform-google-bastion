@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/padok-team/terraform-google-bastion/compare/v0.4.0...v0.4.1) (2024-10-21)
+
+
+### Bug Fixes
+
+* **terratest:** use custom gcp project ([a784788](https://github.com/padok-team/terraform-google-bastion/commit/a7847887a8ef4efa5bced9b64e001f589cf8689a))
+* **terratest:** use default vpc to deploy basic bastion ([cee32be](https://github.com/padok-team/terraform-google-bastion/commit/cee32be69bbb7ecf2e6f5ccafeb7b88d8be1ded8))
+
 ## [0.4.0](https://github.com/padok-team/terraform-google-bastion/compare/v0.3.0...v0.4.0) (2024-05-31)
 
 
