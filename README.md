@@ -21,6 +21,9 @@ module "bastion" {
   members          = ["user:test@padok.fr", "group:test-group@padok.fr"]
 }
 ```
+### User documentation
+
+[Documentation example about the usage of the bastion](./docs/user_documentation.md) which contains: connection to the bastion, connection to a psql database and connection to a memorystore (redis).
 
 ## Examples
 
